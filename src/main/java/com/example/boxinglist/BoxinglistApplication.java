@@ -4,10 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BoxinglistApplication {
+public class BoxingListApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(BoxinglistApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(BoxingListApplication.class, args);
+    }
 }
