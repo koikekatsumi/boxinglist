@@ -21,4 +21,5 @@ public interface BoxingListMapper {
     @Select("SELECT * FROM boxerdata WHERE number_of_matches BETWEEN #{minMatches} AND #{maxMatches}")
     List<Boxer> findByNumberOfMatchesBetween(@Param("minMatches") int minMatches, @Param("maxMatches") int maxMatches);
 
+
 }

@@ -24,7 +24,7 @@ public class BoxingListController {
     }
 
     @GetMapping("/findNames") //エンドポイント例 http://localhost:8080/findNames?startsWith=I
-    public List<Boxer> getBoxers(@RequestParam String startsWith) {
+    public List<Boxer> findByNames(@RequestParam String startsWith) {
         List<Boxer> boxers = boxingListService.findByNamesStartingWith(startsWith);
         return boxers;
     }
@@ -41,4 +41,3 @@ public class BoxingListController {
     }
 
 }
-
