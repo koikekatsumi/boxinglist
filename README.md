@@ -2,7 +2,7 @@
 
 ```mermaid
 sequenceDiagram
-    Client ->> WebAPI: ユーザーを全件取得(/BMIs)
+    Client ->> WebAPI: ユーザーを全件取得(/boxers)
     WebAPI ->> DB: DBにアクセス
     DB -->> WebAPI: ユーザー情報をリストで取得
     WebAPI -->> Client: 200 OK ユーザー情報をリストで取得
